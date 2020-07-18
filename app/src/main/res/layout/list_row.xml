@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/item_selector">
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/bookImage"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Alchemist"
+        android:id="@+id/bookName"
+        android:textColor="#080aa3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookAuthor"
+        android:text="Paulo Coelho"
+        android:textColor="#e557c6"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_below="@id/bookName"
+        android:paddingTop="2dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/play"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200 pages"
+        android:id="@+id/bookPages"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/play"
+        android:layout_margin="4dp"
+        android:textColor="#0f914e"/>
+
+
+</RelativeLayout>
